@@ -10,10 +10,6 @@ import com.example.algamoney.api.model.Pessoa;
 @Repository
 public interface PessoaRepository extends JpaRepository<Pessoa, Long> {
 
-	Pessoa save(Optional<Pessoa> pessoaSalva);
-
-	Pessoa findOne(Long codigo);
-
-	Pessoa delete(Long codigo);
+	void save(Optional<Pessoa> pessoaSalva);
 
 }
