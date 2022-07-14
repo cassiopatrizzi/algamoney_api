@@ -1,4 +1,4 @@
-package com.example.algamoney.api.cors;
+/*package com.example.algamoney.api.cors;
 
 import java.io.IOException;
 
@@ -43,4 +43,4 @@ public class CorsFilter implements Filter {
         
     }
     
-}
+}*/
