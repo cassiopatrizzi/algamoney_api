@@ -139,7 +139,13 @@ public class Lancamento {
 		if (getClass() != obj.getClass())
 			return false;
 		Lancamento other = (Lancamento) obj;
-		return Objects.equals(codigo, other.codigo);
+		if (codigo == null) {
+			if (other.codigo != null)
+				return false;
+		} else if (!codigo.equals(other.codigo))
+			return false;
+		return true;
 	}
+
 
 }
